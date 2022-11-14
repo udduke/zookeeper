@@ -84,6 +84,7 @@ public class QuorumPeerMain {
      * the command line.
      * @param args path to the configfile
      */
+    // 启动入口
     public static void main(String[] args) {
         QuorumPeerMain main = new QuorumPeerMain();
         try {
