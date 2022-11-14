@@ -86,8 +86,10 @@ public class QuorumPeerMain {
      */
     // 启动入口
     public static void main(String[] args) {
+        //
         QuorumPeerMain main = new QuorumPeerMain();
         try {
+            // 初始化和启动zookeeper服务端
             main.initializeAndRun(args);
         } catch (IllegalArgumentException e) {
             LOG.error("Invalid arguments, exiting abnormally", e);
